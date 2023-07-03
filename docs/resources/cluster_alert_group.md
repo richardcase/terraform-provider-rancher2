@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_cluster_alert_group Resource"
+description: |-
+  Provides a Rancher v2 Cluster Alert Group resource. This can be used to create Cluster Alert Group for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_cluster\_alert\_group Resource

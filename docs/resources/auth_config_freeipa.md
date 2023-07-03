@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_freeipa Resource"
+description: |-
+  Provides a Rancher v2 Auth Config FreeIpa resource. This can be used to configure and enable Auth Config FreeIpa for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_freeipa Resource

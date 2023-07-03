@@ -1,5 +1,7 @@
 ---
 page_title: "Rancher2: rancher2_catalog_v2 Resource"
+description: |-
+  Provides a Rancher Catalog v2 resource. This can be used to create cluster helm catalogs for Rancher v2 environments and retrieve their information. Catalog v2 resource is available at Rancher v2.5.x and above.
 ---
 
 # rancher2\_catalog\_v2 Resource

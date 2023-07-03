@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_registry Resource"
+description: |-
+  Provides a Rancher v2 Registry resource. This can be used to create docker registries for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_registry Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "Rancher2: rancher2_catalog Resource"
+description: |-
+  Provides a Rancher v2 Catalog resource. This can be used to create cluster, global and/or project catalogs for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_catalog Resource

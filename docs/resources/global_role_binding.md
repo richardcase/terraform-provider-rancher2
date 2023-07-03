@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_global_role_binding Resource"
+description: |-
+  Provides a Rancher v2 Global Role Binding resource. This can be used to create Global Role Bindings for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_global\_role\_binding Resource

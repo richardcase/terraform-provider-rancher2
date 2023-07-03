@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_azuread Resource"
+description: |-
+  Provides a Rancher v2 Auth Config AzureAD resource. This can be used to configure and enable Auth Config AzureAD for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_azuread Resource

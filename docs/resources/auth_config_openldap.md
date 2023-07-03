@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_openldap Resource"
+description: |-
+  Provides a Rancher v2 Auth Config OpenLdap resource. This can be used to configure and enable Auth Config OpenLdap for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_openldap Resource

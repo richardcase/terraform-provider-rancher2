@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_project Resource"
+description: |-
+  Provides a Rancher v2 Project resource. This can be used to create projects for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_project Resource

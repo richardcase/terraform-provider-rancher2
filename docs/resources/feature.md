@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_feature Resource"
+description: |-
+  Provides a Rancher v2 Feature resource. This can be used to enable/disable experimental features for Rancher v2 environments.
 ---
 
 # rancher2\_feature Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_cloud_credential Resource"
+description: |-
+  Provides a Rancher v2 Cloud Credential resource. This can be used to create Cloud Credential for Rancher v2.2.x and retrieve their information.
 ---
 
 # rancher2\_cloud\_credential Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_bootstrap Resource"
+description: |-
+  Provides a Rancher v2 bootstrap resource. This can be used to bootstrap Rancher v2 environments and output information.
 ---
 
 # rancher2\_bootstrap Resource

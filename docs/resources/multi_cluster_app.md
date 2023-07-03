@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_multi_cluster_app Resource"
+description: |-
+  Provides a Rancher v2 multi_cluster_app resource. This can be used to deploy multi_cluster_app on Rancher v2.
 ---
 
 # rancher2\_multi_cluster_app Resource

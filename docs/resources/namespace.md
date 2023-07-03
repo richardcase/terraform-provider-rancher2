@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_namespace Resource"
+description: |-
+  Provides a Rancher v2 Namespace resource. This can be used to create namespaces for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_namespace Resource

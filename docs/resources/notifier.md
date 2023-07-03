@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_notifier Resource"
+description: |-
+  Provides a Rancher v2 Notifier resource. This can be used to create notifiers for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_notifier Resource

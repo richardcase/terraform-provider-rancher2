@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_adfs Resource"
+description: |-
+  Provides a Rancher v2 Auth Config ADFS resource. This can be used to configure and enable Auth Config ADFS for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_adfs Resource

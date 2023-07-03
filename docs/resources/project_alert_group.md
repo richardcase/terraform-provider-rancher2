@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_project_alert_group Resource"
+description: |-
+  Provides a Rancher v2 Project Alert Group resource. This can be used to create Project Alert Group for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_project\_alert\_group Resource

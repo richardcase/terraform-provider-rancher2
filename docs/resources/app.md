@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_app Resource"
+description: |-
+  Provides a Rancher v2 app resource. This can be used to deploy apps within Rancher v2 projects.
 ---
 
 # rancher2\_app Resource

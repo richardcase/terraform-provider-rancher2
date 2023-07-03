@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_cluster_alert_rule Resource"
+description: |-
+  Provides a Rancher v2 Cluster Alert Rule resource. This can be used to create Cluster Alert Rule for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_cluster\_alert\_rule Resource

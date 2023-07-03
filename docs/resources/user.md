@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_user Resource"
+description: |-
+  Provides a Rancher v2 User resource. This can be used to create Users for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_user Resource

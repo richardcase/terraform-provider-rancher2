@@ -1,5 +1,7 @@
 ---
 page_title: "Rancher2: rancher2_storage_class_v2 Resource"
+description: |-
+  Provides a Rancher Storage Class v2 resource. This can be used to manage k8s storage classes for Rancher v2 clusters and retrieve their information. Storage Class v2 resource is available at Rancher v2.5.x and above.
 ---
 
 # rancher2\_storageClass\_v2 Resource

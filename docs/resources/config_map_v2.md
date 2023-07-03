@@ -1,5 +1,7 @@
 ---
 page_title: "Rancher2: rancher2_config_map_v2 Resource"
+description: |-
+  Provides a Rancher ConfigMap v2 resource. This can be used to create k8s configMaps for Rancher v2 environments and retrieve their information. ConfigMap v2 resource is available at Rancher v2.5.x and above.
 ---
 
 # rancher2\_config\_map\_v2 Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_global_role Resource"
+description: |-
+  Provides a Rancher v2 Global Role resource. This can be used to create Global Role for Rancher v2 and retrieve their information.
 ---
 
 # rancher2\_global\_role Resource

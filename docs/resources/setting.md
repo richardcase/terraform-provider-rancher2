@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_setting Resource"
+description: |-
+  Provides a Rancher v2 Setting resource. This can be used to create settings for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_setting Resource

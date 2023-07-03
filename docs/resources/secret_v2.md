@@ -1,5 +1,7 @@
 ---
 page_title: "Rancher2: rancher2_secret_v2 Resource"
+description: |-
+  Provides a Rancher Secret v2 resource. This can be used to create k8s secrets for Rancher v2 environments and retrieve their information. Secret v2 resource is available at Rancher v2.5.x and above.
 ---
 
 # rancher2\_secret\_v2 Resource

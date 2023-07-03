@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_okta Resource"
+description: |-
+  Provides a Rancher v2 Auth Config OKTA resource. This can be used to configure and enable Auth Config OKTA for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_okta Resource

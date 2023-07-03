@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_auth_config_keycloak Resource"
+description: |-
+  Provides a Rancher v2 Auth Config KeyCloak resource. This can be used to configure and enable Auth Config KeyCloak for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_auth\_config\_keycloak Resource

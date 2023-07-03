@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_secret Resource"
+description: |-
+  Provides a Rancher v2 Secret resource. This can be used to create secrets for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_secret Resource

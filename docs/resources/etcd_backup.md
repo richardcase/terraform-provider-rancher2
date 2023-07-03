@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_etcd_backup Resource"
+description: |-
+  Provides a Rancher v2 Etcd Backup resource. This can be used to create an Etcd Backup for Rancher v2.2.x and above, and to retrieve their information. 
 ---
 
 # rancher2\_etcd\_backup Resource

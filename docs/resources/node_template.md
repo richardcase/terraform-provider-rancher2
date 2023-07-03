@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_node_template Resource"
+description: |-
+  Provides a Rancher v2 Node Template resource. This can be used to create Node Template for Rancher v2 and retrieve their information.
 ---
 
 # rancher2\_node\_template Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_certificate Resource"
+description: |-
+  Provides a Rancher v2 certificate resource. This can be used to create certificates for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_certificate Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_project_role_template_binding Resource"
+description: |-
+  Provides a Rancher v2 Project Role Template Binding resource. This can be used to create Project Role Template Bindings for Rancher v2 environments and retrieve their information.
 ---
 
 # rancher2\_project\_role\_template\_binding Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_cluster_sync Resource"
+description: |-
+  Provides a Rancher v2 Cluster Sync dummy resource. This can be used to create a Cluster Sync to wait for a Rancher v2 Cluster resource `active` state.
 ---
 
 # rancher2\_cluster\_sync Resource

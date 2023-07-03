@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_cluster_template Resource"
+description: |-
+  Provides a Rancher v2 Cluster Template resource. This can be used to create Cluster Templates for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_cluster\_template Resource

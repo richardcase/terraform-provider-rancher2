@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_node_pool Resource"
+description: |-
+  Provides a Rancher v2 Node Pool resource. This can be used to create Node Pool, using Node template for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_node\_pool Resource

@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_node_driver Resource"
+description: |-
+  Provides a Rancher v2 Node Driver resource. This can be used to create Node Driver for Rancher v2 RKE clusters and retrieve their information.
 ---
 
 # rancher2\_node\_driver Resource

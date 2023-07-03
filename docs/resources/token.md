@@ -1,5 +1,7 @@
 ---
 page_title: "rancher2_token Resource"
+description: |-
+  Provides a Rancher v2 Token resource. This can be used to create Tokens for Rancher v2 provider user and retrieve their information.
 ---
 
 # rancher2\_token Resource
