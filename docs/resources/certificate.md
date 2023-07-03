@@ -17,23 +17,23 @@ There are 2 types of Rancher v2 certificates:
 ```hcl
 # Create a new rancher2 Project Certificate
 resource "rancher2_certificate" "foo" {
-  certs = base64encode(<PUBLIC_CERTS>)
-  key = base64encode(<PRIVATE_KEY>)
+  certs = base64encode("PUBLIC_CERT_DATA")
+  key = base64encode("PRIVATE_KEY_DATA")
   name = "foo"
   description = "Terraform certificate foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
 }
 ```
 
 ```hcl
 # Create a new rancher2 Namespaced Certificate
 resource "rancher2_certificate" "foo" {
-  certs = base64encode(<PUBLIC_CERTS>)
-  key = base64encode(<PRIVATE_KEY>)
+  certs = base64encode("PUBLIC_CERT_DATA")
+  key = base64encode("PRIVATE_KEY_DATA")
   name = "foo"
   description = "Terraform certificate foo"
-  project_id = "<project_id>"
-  namespace_id = "<namespace_id>"
+  project_id = "project-1-id"
+  namespace_id = "namespace-id-1"
 }
 ```
 

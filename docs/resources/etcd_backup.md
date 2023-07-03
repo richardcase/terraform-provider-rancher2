@@ -28,7 +28,7 @@ resource "rancher2_etcd_backup" "foo" {
       secret_key = "secret_key"
     }
   }
-  cluster_id = "<CLUSTER_ID>"
+  cluster_id = ""cluster-id-1""
   name = "foo"
   filename = "<FILENAME>"
 }

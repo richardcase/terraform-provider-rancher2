@@ -13,7 +13,7 @@ Provides a Rancher Storage Class v2 resource. This can be used to manage k8s sto
 ```hcl
 # Create a new Rancher2 Storage Class V2
 resource "rancher2_storage_class_v2" "foo" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo"
   parameters = {
     "gidAllocate" = "true"

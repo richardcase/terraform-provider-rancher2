@@ -421,7 +421,7 @@ resource "rancher2_cloud_credential" "foo-google" {
   name = "foo-google"
   description= "Terraform cloudCredential acceptance test"
   google_credential_config {
-    auth_encoded_json = file(<GOOGLE_AUTH_ENCODED_JSON>)
+    auth_encoded_json = file("<GOOGLE_AUTH_ENCODED_JSON>")
   }
 }
 
@@ -431,8 +431,8 @@ resource "rancher2_cluster" "foo" {
   gke_config_v2 {
     name = "foo"
     google_credential_secret = rancher2_cloud_credential.foo-google.id
-    region = <REGION> # Zone argument could also be used instead of region
-    project_id = <PROJECT_ID>
+    region = "<REGION>" # Zone argument could also be used instead of region
+    project_id = "project-1-id"
     imported = true
   }
 }
@@ -447,7 +447,7 @@ resource "rancher2_cloud_credential" "foo-google" {
   name = "foo-google"
   description= "Terraform cloudCredential acceptance test"
   google_credential_config {
-    auth_encoded_json = file(<GOOGLE_AUTH_ENCODED_JSON>)
+    auth_encoded_json = file("<GOOGLE_AUTH_ENCODED_JSON>")
   }
 }
 
@@ -457,16 +457,16 @@ resource "rancher2_cluster" "foo" {
   gke_config_v2 {
     name = "foo"
     google_credential_secret = rancher2_cloud_credential.foo-google.id
-    region = <REGION> # Zone argument could also be used instead of region
-    project_id = <PROJECT_ID>
-    kubernetes_version = <K8S_VERSION>
-    network = <NETWORK>
-    subnetwork = <SUBNET>
+    region = "<REGION>" # Zone argument could also be used instead of region
+    project_id = "project-1-id"
+    kubernetes_version = "<K8S_VERSION>"
+    network = "<NETWORK>"
+    subnetwork = "<SUBNET>"
     node_pools {
       initial_node_count = 1
       max_pods_constraint = 110
-      name = <NODE_POOL_NAME>
-      version = <VERSION>
+      name = "<NODE_POOL_NAME>"
+      version = "<VERSION>"
     }
   }
 }
@@ -486,7 +486,7 @@ resource "rancher2_cloud_credential" "foo-aks" {
 }
 # For imported AKS clusters, don't add any other aks_config_v2 field
 resource "rancher2_cluster" "foo" {
-  name = <CLUSTER_NAME>
+  name = "<CLUSTER_NAME>"
   description = "Terraform AKS cluster"
   aks_config_v2 {
     cloud_credential_id = rancher2_cloud_credential.foo-aks.id

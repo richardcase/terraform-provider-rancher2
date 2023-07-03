@@ -15,13 +15,13 @@ In addition to the built-in local auth, only one external auth config provider c
 ```hcl
 # Create a new rancher2 Auth Config FreeIpa
 resource "rancher2_auth_config_freeipa" "freeipa" {
-  servers = ["<FREEIPA_SERVER>"]
-  service_account_distinguished_name = "<SERVICE_DN>"
-  service_account_password = "<SERVICE_PASSWORD>"
-  user_search_base = "<SEARCH_BASE>"
-  port = <FREEIPA_PORT>
-  test_username = "<USER_NAME>"
-  test_password = "<USER_PASSWORD>"
+  servers = ["server1"]
+  service_account_distinguished_name = "CN=Test,OU=Engineering,DC=COM"
+  service_account_password = "servicepasswd"
+  user_search_base = "searchbase"
+  port = 389
+  test_username = "user1"
+  test_password = "userpwd"
 }
 ```
 

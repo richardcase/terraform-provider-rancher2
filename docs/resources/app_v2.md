@@ -13,7 +13,7 @@ Provides a Rancher App v2 resource. This can be used to manage helm charts for R
 ```hcl
 # Create a new Rancher2 App V2 using
 resource "rancher2_app_v2" "foo" {
-  cluster_id = "<CLUSTER_ID>"
+  cluster_id = ""cluster-id-1""
   name = "rancher-monitoring"
   namespace = "cattle-monitoring-system"
   repo_name = "rancher-charts"

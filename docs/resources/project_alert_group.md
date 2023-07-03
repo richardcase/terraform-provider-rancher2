@@ -15,7 +15,7 @@ Provides a Rancher v2 Project Alert Group resource. This can be used to create P
 resource "rancher2_project_alert_group" "foo" {
   name = "foo"
   description = "Terraform project alert group"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   group_interval_seconds = 300
   repeat_interval_seconds = 3600
 }

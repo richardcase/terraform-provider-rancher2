@@ -13,7 +13,7 @@ Provides a Rancher ConfigMap v2 resource. This can be used to create k8s configM
 ```hcl
 # Create a new Rancher2 ConfigMap V2
 resource "rancher2_config_map_v2" "foo" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo"
   data = {
   	mydata1 = "<data1>"

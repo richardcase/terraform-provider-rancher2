@@ -13,7 +13,7 @@ Provides a Rancher Secret v2 resource. This can be used to create k8s secrets fo
 ```hcl
 # Create a new Rancher2 Secret V2
 resource "rancher2_secret_v2" "foo" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo"
   data = {
   	mydata1 = "<data1>"
@@ -23,7 +23,7 @@ resource "rancher2_secret_v2" "foo" {
 }
 # Create a new Rancher2 Secret V2 basic-auth
 resource "rancher2_secret_v2" "foo" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo"
   namespace = "<mynamespace>"
   type = "kubernetes.io/basic-auth"

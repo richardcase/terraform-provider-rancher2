@@ -19,7 +19,7 @@ Depending of the availability, there are 2 types of Rancher v2 secrets:
 resource "rancher2_secret" "foo" {
   name = "foo"
   description = "Terraform secret foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   data = {
     address = base64encode("test.io")
     username = base64encode("user2")
@@ -33,7 +33,7 @@ resource "rancher2_secret" "foo" {
 resource "rancher2_secret" "foo" {
   name = "foo"
   description = "Terraform secret foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   namespace_id = "<namespace_id>"
   data = {
     address = base64encode("test.io")
@@ -72,7 +72,7 @@ The following attributes are exported:
 
 ## Import
 
-Secrets can be imported using the secret ID in the format `<namespace_id>.<project_id>.<secret_id>`
+Secrets can be imported using the secret ID in the format `<namespace_id>.project-1-id.<secret_id>`
 
 ```
 $ terraform import rancher2_secret.foo &lt;namespace_id&gt;.&lt;project_id&gt;.&lt;secret_id&gt;

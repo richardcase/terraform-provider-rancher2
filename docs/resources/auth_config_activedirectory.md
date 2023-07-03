@@ -15,13 +15,13 @@ In addition to the built-in local auth, only one external auth config provider c
 ```hcl
 # Create a new rancher2 Auth Config ActiveDirectory
 resource "rancher2_auth_config_activedirectory" "activedirectory" {
-  servers = ["<ACTIVEDIRECTORY_SERVER>"]
-  service_account_username = "<SERVICE_DN>"
-  service_account_password = "<SERVICE_PASSWORD>"
-  user_search_base = "<SEARCH_BASE>"
-  port = <ACTIVEDIRECTORY_PORT>
-  test_username = "<USER_NAME>"
-  test_password = "<USER_PASSWORD>"
+  servers = ["server1"]
+  service_account_username = "CN=Test,OU=Engineering,DC=COM"
+  service_account_password = "servicepasswd"
+  user_search_base = "searchbase"
+  port = 1723
+  test_username = "user1"
+  test_password = "userpwd"
 }
 ```
 

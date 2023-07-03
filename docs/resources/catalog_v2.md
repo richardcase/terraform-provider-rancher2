@@ -13,16 +13,17 @@ Provides a Rancher Catalog v2 resource. This can be used to create cluster helm 
 ```hcl
 # Create a new Rancher2 Catalog V2 using git repo and branch
 resource "rancher2_catalog_v2" "foo" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo"
-  git_repo = "<GIT_REPO_URL>"
-  git_branch = "<GIT_BRANCH>"
+  git_repo = "git@mygitserver.com:myorg/myrepo.git"
+  git_branch = "main"
 }
+
 # Create a new Rancher2 Catalog V2 using url
 resource "rancher2_catalog_v2" "foo-url" {
-  cluster_id = <CLUSTER_ID>
+  cluster_id = "cluster-id-1"
   name = "foo-url"
-  url = "https://<CATALOG_URL>"
+  url = "https://catalogurl"
 }
 ```
 

@@ -23,7 +23,7 @@ resource "rancher2_app" "foo" {
   catalog_name = "<catalog_name>"
   name = "foo"
   description = "Foo app"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   template_name = "<template_name>"
   template_version = "<template_version>"
   target_namespace = "<namespace_name>"
@@ -40,7 +40,7 @@ resource "rancher2_app" "foo" {
 resource "rancher2_namespace" "foo" {
   name = "foo"
   description = "Foo namespace"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   resource_quota {
     limit {
       limits_cpu = "100m"
@@ -54,7 +54,7 @@ resource "rancher2_app" "foo" {
   catalog_name = "<catalog_name>"
   name = "foo"
   description = "Foo app"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   template_name = "<template_name>"
   template_version = "<template_version>"
   target_namespace = rancher2_namespace.foo.id
@@ -105,7 +105,7 @@ The following attributes are exported:
 
 ## Import
 
-Apps can be imported using the app ID in the format `<project_id>:<app_name>`
+Apps can be imported using the app ID in the format `project-1-id:<app_name>`
 
 ```
 $ terraform import rancher2_app.foo &lt;PROJECT_ID_ID&gt;:&lt;APP_NAME&gt;

@@ -14,7 +14,7 @@ Provides a Rancher v2 Notifier resource. This can be used to create notifiers fo
 # Create a new rancher2 Notifier
 resource "rancher2_notifier" "foo" {
   name = "foo"
-  cluster_id = "<cluster_id>"
+  cluster_id = ""cluster-id-1""
   description = "Terraform notifier acceptance test"
   send_resolved = "true"
   pagerduty_config {

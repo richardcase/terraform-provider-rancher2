@@ -14,7 +14,7 @@ Provides a Rancher v2 Project Alert Rule resource. This can be used to create Pr
 # Create a new Rancher2 Project
 resource "rancher2_project" "foo" {
   name = "foo"
-  cluster_id = "<cluster_id>"
+  cluster_id = ""cluster-id-1""
   description = "Terraform project "
   resource_quota {
     project_limit {

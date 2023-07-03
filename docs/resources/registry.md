@@ -19,7 +19,7 @@ Depending of the availability, there are 2 types of Rancher v2 docker registries
 resource "rancher2_registry" "foo" {
   name = "foo"
   description = "Terraform registry foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   registries {
     address = "test.io"
     username = "user"
@@ -33,7 +33,7 @@ resource "rancher2_registry" "foo" {
 resource "rancher2_registry" "foo" {
   name = "foo"
   description = "Terraform registry foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   namespace_id = "<namespace_id>"
   registries {
     address = "test.io"
@@ -82,7 +82,7 @@ The following attributes are exported:
 
 ## Import
 
-Registries can be imported using the registry ID in the format `<namespace_id>.<project_id>.<registry_id>`
+Registries can be imported using the registry ID in the format `<namespace_id>.project-1-id.<registry_id>`
 
 ```
 $ terraform import rancher2_registry.foo &lt;namespace_id&gt;.&lt;project_id&gt;.&lt;registry_id&gt;

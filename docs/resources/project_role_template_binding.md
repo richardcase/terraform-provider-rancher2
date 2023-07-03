@@ -14,7 +14,7 @@ Provides a Rancher v2 Project Role Template Binding resource. This can be used t
 # Create a new rancher2 Project Role Template Binding
 resource "rancher2_project_role_template_binding" "foo" {
   name = "foo"
-  project_id = "<project_id>"
+  project_id = "project-1-id"
   role_template_id = "<role_template_id>"
   user_id = "<user_id>"
 }

@@ -14,7 +14,7 @@ Provides a Rancher v2 Namespace resource. This can be used to create namespaces 
 # Create a new rancher2 Namespace
 resource "rancher2_namespace" "foo" {
   name = "foo"
-  project_id = "<PROJECT_ID>"
+  project_id = "project-1-id"
   description = "foo namespace"
   resource_quota {
     limit {
@@ -69,7 +69,7 @@ resource "rancher2_namespace" "foo" {
 The following arguments are supported:
 
 * `name` - (Required) The name of the namespace (string)
-* `project_id` - (Required) The project id where assign namespace. It's on the form `project_id=<cluster_id>:<id>`. Updating `<id>` part on same `<cluster_id>` namespace will be moved between projects (string)
+* `project_id` - (Required) The project id where assign namespace. It's on the form `project_id="cluster-id-1":<id>`. Updating `<id>` part on same `"cluster-id-1"` namespace will be moved between projects (string)
 * `container_resource_limit` - (Optional) Default containers resource limits on namespace (List maxitem:1)
 * `description` - (Optional) A namespace description (string)
 * `resource_quota` - (Optional/Computed) Resource quota for namespace. Rancher v2.1.x or higher (list maxitems:1)
@@ -130,14 +130,14 @@ More info at [resource-quotas](https://rancher.com/docs/rancher/v2.x/en/k8s-in-r
 
 ## Import
 
-Namespaces can be imported using the namespace ID in the format `<project_id>.<namespace_id>`
+Namespaces can be imported using the namespace ID in the format `project-1-id.<namespace_id>`
 
 ```
 $ terraform import rancher2_namespace.foo &lt;project_id&gt;.&lt;namespaces_id&gt;
 ```
 
-`<project_id>` is in the format `<cluster_id>:<id>`, but <id> part is optional: 
+`project-1-id` is in the format `"cluster-id-1":<id>`, but <id> part is optional: 
 
-- If full project_id is provided, `<project_id>=<cluster_id>:<id>`, the namespace'll be assigned to corresponding cluster project once it's imported. 
-- If `<id>` part is omitted `<project_id>=<cluster_id>`, the namespace'll not be assigned to any project. To move it into a project, `<project_id>=<cluster_id>:<id>` needs to be updated in tf file. Namespace movement is only supported inside same `cluster_id`.
+- If full project_id is provided, `project-1-id="cluster-id-1":<id>`, the namespace'll be assigned to corresponding cluster project once it's imported. 
+- If `<id>` part is omitted `project-1-id="cluster-id-1"`, the namespace'll not be assigned to any project. To move it into a project, `project-1-id="cluster-id-1":<id>` needs to be updated in tf file. Namespace movement is only supported inside same `cluster_id`.
 

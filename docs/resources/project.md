@@ -14,7 +14,7 @@ Provides a Rancher v2 Project resource. This can be used to create projects for 
 # Create a new rancher2 Project
 resource "rancher2_project" "foo" {
   name = "foo"
-  cluster_id = "<CLUSTER_ID>"
+  cluster_id = ""cluster-id-1""
   resource_quota {
     project_limit {
       limits_cpu = "2000m"
@@ -40,7 +40,7 @@ resource "rancher2_project" "foo" {
 # Create a new rancher2 Project enabling and customizing monitoring
 resource "rancher2_project" "foo" {
   name = "foo"
-  cluster_id = "<CLUSTER_ID>"
+  cluster_id = ""cluster-id-1""
   resource_quota {
     project_limit {
       limits_cpu = "2000m"

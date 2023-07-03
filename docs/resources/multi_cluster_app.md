@@ -23,7 +23,7 @@ resource "rancher2_multi_cluster_app" "foo" {
   catalog_name = "<catalog_name>"
   name = "foo"
   targets {
-    project_id = "<project_id>"
+    project_id = "project-1-id"
   }
   template_name = "<template_name>"
   template_version = "<template_version>"

@@ -21,7 +21,7 @@ resource "rancher2_machine_config_v2" "foo" {
   amazonec2_config {
     ami =  "<AMI_ID>"
     region = "<REGION>"
-    security_group = [<AWS_SG>]
+    security_group = ["<AWS_SG>"]
     subnet_id = "<SUBNET_ID>"
     vpc_id = "<VPC_ID>"
     zone = "<ZONE>"
